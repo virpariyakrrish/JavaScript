@@ -1,7 +1,7 @@
 //  task-1
 // let studentName = "Krish virpariya";
-// const collegeName = "RKU University";
-// var age = 20;
+// const collegeName = "darshan University";
+// var age = 19;
 
 // console.log(studentName);
 // console.log(collegeName);
@@ -21,7 +21,7 @@ const country = "India";
 
 console.log(country); // India
 
-country = "USA"; // Error
+country = "canada"; // Error
 
 console.log(country);
 
@@ -66,7 +66,7 @@ console.log(country);
 
 
 // // task-7
-// let salary = 30000;
+// let salary = 50000;
 // console.log("Initial salary:", salary);
 
 // salary += 2000;
@@ -132,7 +132,7 @@ console.log(country);
 // "Krish",
 // "Dipak",
 // "Het",
-// "Yanna",
+// "Yana",
 // "Darshit"
 // ];
 
