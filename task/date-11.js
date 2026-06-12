@@ -37,5 +37,3 @@ switch (choice) {
     if (choice != '4') {
     console.log(bill);
 }
-
-// console.log(bill);
