@@ -5,17 +5,17 @@ var bill = 0;
 
 switch (choice) {
     case '1': choice = Number(prompt("Enter Quantity : "));
-        if (choice <= 10) {
-            bill += (10 * choice);
+        if (choice <= 15) {
+            bill += (20 * choice);
         } else {
-            bill += (10 * choice - (10 * choice * 0.05));
+            bill += (20 * choice - (15 * choice * 0.05));
         }
         break;
     case '2': choice = Number(prompt("Enter Quantity : "));
-        if (choice <= 10) {
-            bill += (5 * choice);
+        if (choice <= 15) {
+            bill += (20 * choice);
         } else {
-            bill += (5 * choice - (5 * choice * 0.05));
+            bill += (20 * choice - (15 * choice * 0.05));
         }
         break;
     case '3': choice = Number(prompt("Enter Quantity : "));
