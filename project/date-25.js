@@ -107,12 +107,12 @@ books=books.filter((book)=>{
 return book.id!=id;});
 }
 
-
 document.querySelector(".available").onclick=function(){
 document.querySelector("table").classList.add("show");
 document.querySelector("tbody").innerHTML="";
 for(const book of books){
 book.status=(book.quantity>0)?"Available":"Out of Stock";
+if(book.quantity>0){
 document.querySelector("tbody").innerHTML+=`
 <tr>
 <td>${book.id}</td>
@@ -122,6 +122,7 @@ document.querySelector("tbody").innerHTML+=`
 <td>${book.quantity}</td>
 <td>${book.status}</td>
 </tr>`;
+}
 }
 }
 
