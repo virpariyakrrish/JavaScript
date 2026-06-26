@@ -12,6 +12,7 @@ let arr = [
 
 document.querySelector('.display').onclick = function (){
     document.querySelector('table').classList.add('show');
+    document.querySelector("tbody").innerHTML="";
     for (const student of arr) {
     document.querySelector('tbody').innerHTML +=  `
         <tr>
