@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Brightness</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            background:black;
+        }
+
+        main{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            gap:50px;
+            height:100vh;
+        }
+
+        section{
+            display:flex;
+            gap:20px;
+        }
+
+        button{
+            border:none;
+            background:green;
+            color:white;
+            padding:15px 25px;
+            font-size:20px;
+            border-radius:10px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<main>
+
+    <img src="low.png" alt="Low Bulb" width="200px">
+
+    <section>
+
+        <button>low</button>
+        <button>medium</button>
+        <button>high</button>
+
+    </section>
+
+</main>
+
+<script>
+
+document.querySelectorAll("button")[0].onclick = function(){
+document.querySelector("img").attributes.src.value = "low.png";
+}
+document.querySelectorAll("button")[1].onclick = function(){
+document.querySelector("img").attributes.src.value = "medium.png";
+}
+document.querySelectorAll("button")[2].onclick = function(){
+document.querySelector("img").attributes.src.value = "high.png";
+}
+
+</script>
+
+</body>
+</html>

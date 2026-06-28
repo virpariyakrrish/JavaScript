@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+        }
+        main{
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            height: 100vh;
+        }
+        section button{
+            border: none;
+            background-color : rgb(45, 92, 45);
+            color: black;
+            font-size: 24px;
+            border-radius: 16px;
+            padding: 15px 25px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <img src="off.png" alt="" width="200px">
+        <section>
+            <button>ON</button>
+        </section>
+    </main>
+
+
+    <script>
+        document.querySelector('button').onclick = function(){
+
+            if(document.querySelector('button').innerHTML == "ON"){
+                document.querySelector('img').attributes.src.value = "on.png";
+                document.querySelector('button').innerHTML = "OFF";
+            }else{
+                document.querySelector('img').attributes.src.value = "off.png";
+                document.querySelector('button').innerHTML = "ON";
+            }
+        }
+    </script>
+</body>
+</html>
