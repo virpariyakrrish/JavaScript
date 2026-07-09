@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+box-sizing: border-box;
+}
+
+.wrapper
+{
+  background-color: purple;
+  height: 100vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+section:nth-child(1)
+{
+  align-self: flex-end;
+  background-color: #FF5E5E;
+  color: white;
+  font-family: calibri;
+  font-weight: bolder;
+  font-size: 24px;
+  padding: 8px 24px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+section:nth-child(2)
+{
+  background-color: green;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+section:nth-child(3)
+{
+  background-color: lightblue;
+  align-self: center;
+}
+
+.buttons
+
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+button
+
+{
+  padding: 8px 18px;
+  font-size: 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}   
+
+.Previous
+{
+  background: #EEEEEE;
+  color: #444444;
+}
+
+.btn
+{
+  background: #667EEA;
+  color: white;
+}
+
+.Submit
+{
+  background: #2ECC71;
+  color: white;
+}
+
+.no-cursor
+{
+   cursor: not-allowed;
+}
