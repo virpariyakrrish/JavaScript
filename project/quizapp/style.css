@@ -1,19 +1,24 @@
 *{
   margin: 0;
   padding: 0;
-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family:Arial, sans-serif;
 }
 
 .wrapper
 {
-  background-color: purple;
+  width: 100%;
   height: 100vh;
-  padding: 1rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  background-color: purple;
+  padding: 1rem;
+  gap: 25px;
 }
 
-section:nth-child(1)
+.timer
 {
   align-self: flex-end;
   background-color: #FF5E5E;
@@ -24,30 +29,56 @@ section:nth-child(1)
   padding: 8px 24px;
   border-radius: 8px;
   margin-bottom: 10px;
+  margin-right: 15px;
+  margin-top: 10px;
 }
 
-section:nth-child(2)
+article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2D2B55;
+  width: 80vw;
+  height: 60vh;
+  color: white;
+  font-family: calibri;
+  border-radius: 30px;
+  padding: 40px;
+}
+
+.quiz-box
 {
-  background-color: green;
+  /* background-color: black; */
+  width: 70vw;
+  height: 50vh;
+  justify-content: space-between;
   flex-grow: 1;
   display: flex;
-  justify-content: space-between;
-}
-
-section:nth-child(3)
-{
-  background-color: lightblue;
-  align-self: center;
-}
-
-.buttons
-
-{
-  display: flex;
-  justify-content: space-between;
+  border-radius: 20px;
   align-items: center;
-  gap: 15px;
-  margin-top: 20px;
+}
+
+.quiz-box h2{
+  font-size: 30px;
+  margin-top: 10px;
+  
+}
+
+.opetions label
+{
+  font-size: 18px;
+  padding: 10px;
+}
+
+.opetions input
+{
+  /* margin-bottom: 50px; */
+  margin-top: 8vh;
+}
+
+.btn{
+  justify-content: center;
+  gap: 50px;
 }
 
 button
@@ -66,13 +97,13 @@ button
   color: #444444;
 }
 
-.btn
+.next
 {
   background: #667EEA;
   color: white;
 }
 
-.Submit
+.submit
 {
   background: #2ECC71;
   color: white;
