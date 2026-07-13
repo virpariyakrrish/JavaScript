@@ -171,6 +171,8 @@ let option4 = document.querySelector(".op-4");
 
 let next = document.querySelector(".next");
 let Previous = document.querySelector(".Previous");
+let inputs = document.querySelectorAll(".opetions input");
+let userAnswer = {};
 
 let index = 0;
 
@@ -182,6 +184,16 @@ function showquestion(){
     option2.innerHTML = questions[index].b;
     option3.innerHTML = questions[index].c;
     option4.innerHTML = questions[index].d;
+
+    inputs.forEach(function(input){
+        input.checked = false;
+    });
+
+    for(let i=0; i < inputs.length; i++){
+        inputs[i].addEventListener("click",function(){
+            userAnswer[index] =i;
+        });
+    }
 
     if(index == 0){
         // Previous.disabled = true;
@@ -214,6 +226,12 @@ function showquestion(){
             index--;
             showquestion();
         }
+    });
+
+    input.forEach(function(index,i){
+        input.addEventListener("click",function(){
+            userAnswer[index] = i;
+        });
     });
 
 
