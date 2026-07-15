@@ -36,7 +36,7 @@
 article{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   background-color: #2D2B55;
   width: 80vw;
   height: 60vh;
@@ -64,16 +64,36 @@ article{
   
 }
 
+
 .opetions label
 {
   font-size: 18px;
-  padding: 10px;
+  color: black;
+  padding: 0px;
+  cursor: pointer;
 }
 
 .opetions input
 {
   /* margin-bottom: 50px; */
-  margin-top: 8vh;
+  margin: 0px;
+  width: 18px;
+  height: 18px;
+  /* background: rgb(255, 255, 255);
+  margin-top: 8vh; */
+  /* margin-left: 3vh; */
+}
+
+.opb
+{
+  background: white;
+  border-radius: 15px;
+  height: 80px;  
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0px 20px;
+  margin-top: 10px;
 }
 
 .btn{

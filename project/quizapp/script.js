@@ -176,6 +176,28 @@ let userAnswer = {};
 
 let index = 0;
 
+let min = document.querySelector(".timer span:first-child");
+let sec = document.querySelector(".timer span:last-child");
+
+let timer;
+
+function startTimer(){
+    clearInterval(timer);
+    let time = 60;
+    timer = setInterval(function(){
+        time--;
+        min.innerHTML = String(Math.floor(time/60)).padStart(2,"0");
+        sec.innerHTML = String(time%60).padStart(2,"0");
+        if(time == 0){
+            clearInterval(timer);
+            if(index < questions.length-1){
+                index++;
+                showquestion();
+            }
+        }
+    },1000);
+}
+
 function showquestion(){
 
     question.innerHTML = questions[index].que;
@@ -192,6 +214,9 @@ function showquestion(){
     for(let i=0; i < inputs.length; i++){
         inputs[i].addEventListener("click",function(){
             userAnswer[index] =i;
+
+            console.log("question :", index + 1);
+            console.log("selected option :",i);
         });
     }
 
@@ -212,7 +237,9 @@ function showquestion(){
         next.classList.remove("no-cursor");
         next.disabled = false;
     }
+    startTimer();
 }
+
 
     next.addEventListener("click",function(){
         if(index < questions.length - 1){
@@ -226,12 +253,6 @@ function showquestion(){
             index--;
             showquestion();
         }
-    });
-
-    input.forEach(function(index,i){
-        input.addEventListener("click",function(){
-            userAnswer[index] = i;
-        });
     });
 
 
