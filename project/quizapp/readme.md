@@ -477,67 +477,6 @@ This resets:
 
 ---
 
-# 🔄 Quiz Working Logic
-
-```text
-Start Quiz
-      │
-      ▼
-Load Current Question
-      │
-      ▼
-Display Four Options
-      │
-      ▼
-Start Countdown Timer
-      │
- ┌────┴────┐
- │         │
- ▼         ▼
-Answer   Time Up
- │         │
- ▼         ▼
-Store    Store
-Answer   Question
- │         │
- └────┬────┘
-      ▼
-Next / Previous
-      │
-      ▼
-Submit Quiz
-      │
-      ▼
-Calculate Score
-      │
-      ▼
-Show Result
-```
-
-# 💡 Key Concepts Learned
-
-By building this project, you will gain hands-on experience with many important JavaScript concepts used in real-world frontend development.
-
-### Concepts Covered
-
-- Dynamic DOM Manipulation
-- Arrays and Array of Objects
-- JavaScript Variables
-- Event Handling
-- Functions
-- Conditional Statements
-- Loops
-- Radio Button Handling
-- Timer Implementation
-- Form Validation
-- Score Calculation
-- Percentage Calculation
-- Dynamic HTML Generation
-- User Interaction
-- Data Storage Using Arrays
-
----
-
 # 📊 Project Highlights
 
 ✔ Beginner Friendly
@@ -594,52 +533,6 @@ The project also introduces real-world concepts like dynamic rendering, event ha
 
 ---
 
-# 🧠 What You'll Learn
-
-After completing this project, you will understand:
-
-- How to create a complete quiz application
-- How to work with Arrays of Objects
-- How to generate HTML dynamically
-- How to use DOM Manipulation
-- How to use querySelector() & querySelectorAll()
-- How to work with radio buttons
-- How to store user answers
-- How to implement Previous & Next functionality
-- How to create countdown timers
-- How to use setInterval() and clearInterval()
-- How to validate user input
-- How to calculate quiz scores
-- How to calculate percentages
-- How to display dynamic result screens
-- How HTML, CSS, and JavaScript work together
-
----
-
-# 📸 Project Preview
-
-```text
-
-                 ┌──────────────────────────────────────────┐
-                 │                                          │
-                 │        📝 JavaScript Quiz App            │
-                 │                                          │
-                 │            ⏱️ 01 : 00 Timer              │
-                 │                                          │
-                 │   1. What is JavaScript?                 │
-                 │                                          │
-                 │   ○ Programming Language                 │
-                 │   ○ Database                             │
-                 │   ○ Browser                              │
-                 │   ○ Operating System                     │
-                 │                                          │
-                 │  ◀ Previous   Next   Submit ▶           │
-                 │                                          │
-                 └──────────────────────────────────────────┘
-
-```
-
----
 
 # 🌟 Future Enhancements
 
@@ -755,60 +648,6 @@ This project helps improve the following skills:
 | **Responsive** | Yes |
 | **External Libraries** | None |
 
----
-
-# 📷 Screenshots
-
-> Add your project screenshots here.
-
-## Quiz Screen
-
-```
-📸 screenshots/quiz.png
-```
-
-## Result Screen
-
-```
-📸 screenshots/result.png
-```
-
----
-
-# 🎥 Project Demo
-
-If you have uploaded a demo video, replace the link below.
-
-```text
-https://your-demo-link.com
-```
-
-Example:
-
-- Google Drive
-- YouTube
-- GitHub Video
-- Loom
-
----
-
-# 🚀 Getting Started
-
-Clone the repository.
-
-```bash
-git clone https://github.com/your-username/javascript-quiz-app.git
-```
-
-Open the project folder.
-
-```bash
-cd javascript-quiz-app
-```
-
-Run the project by opening **index.html** in your browser.
-
-No installation is required.
 
 ---
 
@@ -821,111 +660,13 @@ JavaScript-Quiz-App
 ├── style.css
 ├── script.js
 ├── README.md
-│
-└── screenshots
-    ├── quiz.png
-    └── result.png
 ```
-
----
-
-# 🤝 Contributing
-
-Contributions are always welcome.
-
-If you'd like to improve this project:
-
-1. Fork the repository.
-2. Create your feature branch.
-
-```bash
-git checkout -b feature/NewFeature
-```
-
-3. Commit your changes.
-
-```bash
-git commit -m "Added New Feature"
-```
-
-4. Push to GitHub.
-
-```bash
-git push origin feature/NewFeature
-```
-
-5. Create a Pull Request.
-
----
-
-# 📄 License
-
-This project is licensed under the **MIT License**.
-
-You are free to use, modify, and distribute this project for learning and personal purposes.
-
----
-
-# ❓ Frequently Asked Questions
-
-### Why is this project useful?
-
-It helps beginners understand how to build a complete JavaScript application using DOM Manipulation, timers, events, arrays, and dynamic rendering.
-
----
-
-### Is this project responsive?
-
-✅ Yes.
-
-The layout works on desktop and can easily be improved further for tablets and mobile devices.
-
----
-
-### Does this project use any framework?
-
-❌ No.
-
-Everything is built using **Vanilla JavaScript**.
-
----
-
-### Can I add more questions?
-
-✅ Yes.
-
-Simply add another object inside the **quiz array**.
-
----
-
-### Can I change the timer?
-
-✅ Yes.
-
-Modify the following variable inside **script.js**.
-
-```javascript
-timeLeft = 60;
-```
-
----
-
-# 📖 Learning Resources
-
-Useful resources for learning the technologies used in this project.
-
-- HTML Documentation
-- CSS Documentation
-- JavaScript Documentation
-- MDN Web Docs
-- W3Schools
-- freeCodeCamp
 
 ---
 
 # 👨‍💻 Developer
 
-## **Your Name**
+## **virpariya krish**
 
 ### Frontend Developer
 
@@ -934,8 +675,6 @@ Useful resources for learning the technologies used in this project.
 - HTML5
 - CSS3
 - JavaScript
-- Git
-- GitHub
 
 ---
 
@@ -979,6 +718,10 @@ Special thanks to everyone who contributes to the open-source community and crea
 - Responsive Layout
 - Pure JavaScript
 - Real-World Mini Project
+
+---
+# video link
+https://drive.google.com/file/d/1D-BSo-7Zdh_lRgdM2aj39NCQdlldIpV9/view?usp=sharing
 
 ---
 
