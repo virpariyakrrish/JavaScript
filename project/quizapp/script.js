@@ -1,259 +1,359 @@
-let questions = [
+const quiz = [
 
-{
-    que:"What is JavaScript?",
-    a:"Programming Language",
-    b:"Database",
-    c:"Browser",
-    d:"Operating System"
-},
+    {
+        question: "What is JavaScript?",
+        options: [
+            "Programming Language",
+            "Database",
+            "Browser",
+            "Operating System"
+        ],
+        answer: "Programming Language"
+    },
 
-{
-    que:"JavaScript file extension is?",
-    a:".java",
-    b:".js",
-    c:".html",
-    d:".css"
-},
+    {
+        question: "Which keyword is used to declare a variable in JavaScript?",
+        options: [
+            "var",
+            "int",
+            "float",
+            "char"
+        ],
+        answer: "var"
+    },
 
-{
-    que:"Which tag is used to connect JavaScript in HTML?",
-    a:"style",
-    b:"script",
-    c:"link",
-    d:"js"
-},
+    {
+        question: "Which symbol is used for single-line comments in JavaScript?",
+        options: [
+            "//",
+            "/* */",
+            "#",
+            "=="
+        ],
+        answer: "//"
+    },
 
-{
-    que:"Which keyword is used to declare variable?",
-    a:"var",
-    b:"int",
-    c:"text",
-    d:"number"
-},
+    {
+        question: "Which company developed JavaScript?",
+        options: [
+            "Microsoft",
+            "Netscape",
+            "Google",
+            "Apple"
+        ],
+        answer: "Netscape"
+    },
 
-{
-    que:"Which is not a JavaScript data type?",
-    a:"String",
-    b:"Boolean",
-    c:"Number",
-    d:"Float"
-},
+    {
+        question: "Which method displays output in the browser console?",
+        options: [
+            "console.log()",
+            "document.write()",
+            "alert()",
+            "print()"
+        ],
+        answer: "console.log()"
+    },
 
-{
-    que:"Which method is used for output in console?",
-    a:"console.log()",
-    b:"print()",
-    c:"echo()",
-    d:"show()"
-},
+    {
+        question: "Which operator is used for strict equality?",
+        options: [
+            "==",
+            "=",
+            "===",
+            "!="
+        ],
+        answer: "==="
+    },
 
-{
-    que:"DOM full form?",
-    a:"Document Object Model",
-    b:"Data Object Model",
-    c:"Digital Object Method",
-    d:"Document Order Method"
-},
+    {
+        question: "Which loop is guaranteed to execute at least one time?",
+        options: [
+            "for",
+            "while",
+            "do...while",
+            "foreach"
+        ],
+        answer: "do...while"
+    },
 
-{
-    que:"Which method selects first matching element?",
-    a:"getElement()",
-    b:"querySelector()",
-    c:"select()",
-    d:"find()"
-},
+    {
+        question: "Which function converts a string into an integer?",
+        options: [
+            "parseInt()",
+            "parseFloat()",
+            "Number()",
+            "toString()"
+        ],
+        answer: "parseInt()"
+    },
 
-{
-    que:"Which event is used for mouse click?",
-    a:"hover",
-    b:"click",
-    c:"change",
-    d:"load"
-},
+    {
+        question: "Which method is used to add an element at the end of an array?",
+        options: [
+            "push()",
+            "pop()",
+            "shift()",
+            "unshift()"
+        ],
+        answer: "push()"
+    },
 
-{
-    que:"Which symbol is used for single line comment?",
-    a:"//",
-    b:"/* */",
-    c:"##",
-    d:"<>"
-},
+    {
+        question: "Which method removes the last element from an array?",
+        options: [
+            "pop()",
+            "push()",
+            "shift()",
+            "slice()"
+        ],
+        answer: "pop()"
+    },
 
-{
-    que:"Array index starts from?",
-    a:"0",
-    b:"1",
-    c:"2",
-    d:"-1"
-},
+    {
+        question: "Which keyword is used to declare a constant variable?",
+        options: [
+            "const",
+            "let",
+            "var",
+            "constant"
+        ],
+        answer: "const"
+    },
 
-{
-    que:"Which brackets are used for array?",
-    a:"{}",
-    b:"[]",
-    c:"()",
-    d:"<>"
-},
+    {
+        question: "Which keyword is used to declare a block-scoped variable?",
+        options: [
+            "let",
+            "var",
+            "int",
+            "constvar"
+        ],
+        answer: "let"
+    },
 
-{
-    que:"Which method adds value at end of array?",
-    a:"push()",
-    b:"pop()",
-    c:"shift()",
-    d:"slice()"
-},
+    {
+        question: "Which method is used to remove the first element of an array?",
+        options: [
+            "shift()",
+            "pop()",
+            "push()",
+            "slice()"
+        ],
+        answer: "shift()"
+    },
 
-{
-    que:"Which method removes last array value?",
-    a:"delete()",
-    b:"remove()",
-    c:"pop()",
-    d:"clear()"
-},
+    {
+        question: "Which method adds an element at the beginning of an array?",
+        options: [
+            "unshift()",
+            "push()",
+            "shift()",
+            "splice()"
+        ],
+        answer: "unshift()"
+    },
 
-{
-    que:"Which loop checks condition first?",
-    a:"for loop",
-    b:"do while",
-    c:"function",
-    d:"array"
-},
+    {
+        question: "Which keyword is used to define a function?",
+        options: [
+            "function",
+            "method",
+            "define",
+            "func"
+        ],
+        answer: "function"
+    },
 
-{
-    que:"Which keyword stops loop execution?",
-    a:"stop",
-    b:"break",
-    c:"close",
-    d:"end"
-},
+    {
+        question: "Which method is used to display a popup message?",
+        options: [
+            "alert()",
+            "prompt()",
+            "confirm()",
+            "console.log()"
+        ],
+        answer: "alert()"
+    },
 
-{
-    que:"Which keyword creates function?",
-    a:"function",
-    b:"method",
-    c:"create",
-    d:"make"
-},
+    {
+        question: "Which method is used to take input from the user?",
+        options: [
+            "prompt()",
+            "alert()",
+            "confirm()",
+            "input()"
+        ],
+        answer: "prompt()"
+    },
 
-{
-    que:"Which operator checks value and datatype?",
-    a:"=",
-    b:"==",
-    c:"===",
-    d:"!="
-},
+    {
+        question: "Which value represents an undefined variable?",
+        options: [
+            "undefined",
+            "null",
+            "false",
+            "0"
+        ],
+        answer: "undefined"
+    },
 
-{
-    que:"Which value represents no value?",
-    a:"undefined",
-    b:"empty",
-    c:"zero",
-    d:"space"
-},
+    {
+        question: "Which operator is used to assign a value?",
+        options: [
+            "=",
+            "==",
+            "===",
+            "!="
+        ],
+        answer: "="
+    },
 
-{
-    que:"JavaScript is mainly used for?",
-    a:"Adding interactivity",
-    b:"Database only",
-    c:"Styling only",
-    d:"Operating System"
-}
+    {
+        question: "Which event occurs when a button is clicked?",
+        options: [
+            "onclick",
+            "onload",
+            "onchange",
+            "onmouseover"
+        ],
+        answer: "onclick"
+    }
 
 ];
 
-let question = document.querySelector("h2");
-
-let option1 = document.querySelector(".op-1");
-let option2 = document.querySelector(".op-2");
-let option3 = document.querySelector(".op-3");
-let option4 = document.querySelector(".op-4");
-
-let next = document.querySelector(".next");
-let Previous = document.querySelector(".Previous");
-let inputs = document.querySelectorAll(".opetions input");
-let userAnswer = {};
-
 let index = 0;
-
-let min = document.querySelector(".timer span:first-child");
-let sec = document.querySelector(".timer span:last-child");
-
+let score = 0;
 let timer;
+let timeLeft = 60;
+let answers = new Array(quiz.length).fill(null);
+let timeup = [];
 
-function startTimer(){
+const quizBox = document.querySelector(".quiz-box");
+const previousBtn = document.querySelector(".Previous");
+const nextBtn = document.querySelector(".next");
+const submitBtn = document.querySelector(".submit");
+
+function loadQuestion() {
+
     clearInterval(timer);
-    let time = 60;
-    timer = setInterval(function(){
-        time--;
-        min.innerHTML = String(Math.floor(time/60)).padStart(2,"0");
-        sec.innerHTML = String(time%60).padStart(2,"0");
-        if(time == 0){
+
+    timeLeft = 60;
+
+    document.querySelectorAll(".timer span")[0].innerText = "01";
+    document.querySelectorAll(".timer span")[1].innerText = "00";
+
+    quizBox.innerHTML = `
+        <article>
+            <h2>${index + 1}. ${quiz[index].question}</h2>
+            <main>
+                <aside class="opetions">${quiz[index].options.map(option => `<div class="opb">
+                <input type="radio"name="que-1"value="${option}"${answers[index] === option ? "checked" : ""}>
+                <label>${option}</label>
+                </div>`).join("")}
+                </aside>
+            </main>
+        </article>
+    `;
+
+    document.querySelectorAll(".opb").forEach(box => {
+        box.onclick = function () {
+            box.querySelector("input").checked = true;
+        };
+    });
+
+    previousBtn.disabled = index === 0;
+    nextBtn.disabled = index === quiz.length - 1;
+
+    timer = setInterval(() => {
+        timeLeft--;
+        let min = Math.floor(timeLeft / 60);
+        let sec = timeLeft % 60;
+        document.querySelectorAll(".timer span")[0].innerText =
+            min < 10 ? "0" + min : min;
+        document.querySelectorAll(".timer span")[1].innerText =
+            sec < 10 ? "0" + sec : sec;
+        if (timeLeft <= 0) {
             clearInterval(timer);
-            if(index < questions.length-1){
+            timeup.push(index);
+            alert("Time Up!");
+            if (index < quiz.length - 1) {
                 index++;
-                showquestion();
+                loadQuestion();
+            } else {
+                submitBtn.click();
             }
         }
-    },1000);
+    }, 1000);
 }
 
-function showquestion(){
-
-    question.innerHTML = questions[index].que;
-
-    option1.innerHTML = questions[index].a;
-    option2.innerHTML = questions[index].b;
-    option3.innerHTML = questions[index].c;
-    option4.innerHTML = questions[index].d;
-
-    inputs.forEach(function(input){
-        input.checked = false;
-    });
-
-    for(let i=0; i < inputs.length; i++){
-        inputs[i].addEventListener("click",function(){
-            userAnswer[index] =i;
-
-            console.log("question :", index + 1);
-            console.log("selected option :",i);
-        });
+loadQuestion();
+nextBtn.onclick = function () {
+    let selected = document.querySelector('input[name="que-1"]:checked');
+    if (selected) {
+        answers[index] = selected.value;
     }
-
-    if(index == 0){
-        // Previous.disabled = true;
-        Previous.classList.add("no-cursor");
+    if (index < quiz.length - 1) {
+        index++;
+        loadQuestion();
     }
-    else{
-        // Previous.disabled = false;
-        Previous.classList.remove("no-cursor");
-    }
+};
 
-    if(index == questions.length - 1){
-        next.classList.add("no-cursor");
-        next.disabled = true;
-    }
-    else{
-        next.classList.remove("no-cursor");
-        next.disabled = false;
-    }
-    startTimer();
-}
+previousBtn.onclick = function () {
 
+    let selected = document.querySelector('input[name="que-1"]:checked');
+    if (selected) {
+        answers[index] = selected.value;
+    }
+    if (index > 0) {
+        index--;
+        loadQuestion();
+    }
+};
 
-    next.addEventListener("click",function(){
-        if(index < questions.length - 1){
-            index++;
-            showquestion();
+submitBtn.onclick = function () {
+    let selected = document.querySelector('input[name="que-1"]:checked');
+    if (selected) {
+        answers[index] = selected.value;
+    }
+    clearInterval(timer);
+    score = 0;
+    for (let i = 0; i < quiz.length; i++) {
+        if (answers[i] === quiz[i].answer) {
+            score++;
         }
-    });
 
-    Previous.addEventListener("click",function(){
-        if(index > 0){
-            index--;
-            showquestion();
-        }
-    });
+    }
 
+    let totalQuestions = quiz.length;
+    let wrongAnswers = totalQuestions - score - timeup.length;
+    if (wrongAnswers < 0) {
+        wrongAnswers = 0;
+    }
+    let percentage = ((score / totalQuestions) * 100).toFixed(0);
+    let result = percentage >= 40 ? "PASS ✅" : "FAIL ❌";
+    document.querySelector(".wrapper").innerHTML = `
+    
+    <div class="result">
 
-showquestion();
+        <h1>🎉 Quiz Finished 🎉</h1>
+        <hr>
+        <h3>Total Questions : ${totalQuestions}</h2>
+        <h3>Correct Answers : ${score}</h2>
+        <h3>Wrong Answers : ${wrongAnswers}</h2>
+        <h3>Time Up Questions : ${timeup.length}</h2>
+        <h3>Your Score : ${score} / ${totalQuestions}</h2>
+        <h3>Percentage : ${percentage}%</h2>
+        <h3>Result : ${result}</h2>
+        <br>
+
+        <button id="restart">Restart Quiz</button>
+
+    </div>
+
+    `;
+
+    document.querySelector("#restart").onclick = function () {
+        location.reload();
+    };
+};
