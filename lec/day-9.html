@@ -1,0 +1,53 @@
+<!-- Update Data from LocalStorage using JSON -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Data</title>
+</head>
+<body>
+    <h2>Update Data from LocalStorage</h2>
+    <script>
+        let users = [
+            {
+                fname: "het",
+                lname: "Patel"
+            },
+            {
+                fname: "krish",
+                lname: "patel"
+            },
+            {
+                fname: "dipak",
+                lname: "Patel"
+            }
+        ];
+
+        // Store Data
+        localStorage.setItem("users", JSON.stringify(users));
+
+        // Update Rahul to Sahil
+        var tempUsers = JSON.parse(localStorage.getItem("users")).map((data) => {
+
+            return (
+                data.fname == "krish"
+                    ? {
+                        ...data,
+                        fname: "Sahil"
+                    }
+                    : data
+            );
+        });
+
+        // Save Updated Data
+        localStorage.setItem("users", JSON.stringify(tempUsers));
+
+        // View Result
+        console.log(JSON.parse(localStorage.getItem("users")));
+
+    </script>
+</body>
+</html>

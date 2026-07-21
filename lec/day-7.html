@@ -1,0 +1,75 @@
+<!-- feat: implement Local Storage CRUD operations using JSON -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage</title>
+</head>
+<body>
+    <h2>Local Storage Example</h2>
+    <script>
+        let users = [
+            {
+                fname: "het",
+                lname: "Patel"
+            },
+            {
+                fname: "krish",
+                lname: "patel"
+            },
+            {
+                fname: "dipak",
+                lname: "Patel"
+            }
+        ];
+
+        // 1.
+        // How to Add New Data in a Local Storage
+        // localStorage.setItem("fname", "het");
+        // localStorage.setItem(
+        //     "users",
+        //     JSON.stringify(users));
+
+        // 2
+        // How to View Data
+        console.log(
+            JSON.parse(localStorage.getItem("users")));
+        console.log(localStorage);
+
+        // 3 Delete
+        // var tempUsers = JSON.parse
+        //    (localStorage.getItem("users")).filter((data) => {
+        //     return data.fname != "het";
+        // }); // array
+        
+        // 4. Update Data
+        var tempUsers = JSON.parse(
+            localStorage.getItem("users")
+        ).map((data) => {
+
+            return (
+                (data.fname == "krish")
+                    ? {
+                        ...data,
+                        fname: "Sahil"
+                    }
+                    : data
+            );
+
+        }); // array
+
+        localStorage.setItem(
+            "users",
+            JSON.stringify(tempUsers));
+
+        // How to Access Session Storage
+        // console.log(sessionStorage);
+
+        // How to Add New Data in local Storage
+        // sessionStorage.setItem("fname", "Raj");
+    </script>
+</body>
+</html>
